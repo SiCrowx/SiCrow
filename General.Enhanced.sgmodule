@@ -2,10 +2,10 @@
 #!desc=Wubba lubba dub dub
 
 [General]
-tun-included-routes = 192.168.1.12/32
-force-http-engine-hosts = %APPEND% -<ip-address>, *
-always-raw-tcp-hosts = 91.108.*, 91.105.1*, 5.28.195.*, 149.154.1*, 185.76.151.*, www.google.com
-tun-excluded-routes = %INSERT% 10.0.0.0/8, 127.0.0.0/8, 224.0.0.0/4, 192.0.0.0/24, 192.0.2.0/24, 100.64.0.0/10, 172.16.0.0/12, 169.254.0.0/16, 192.88.99.0/24, 192.168.0.0/16, 203.0.113.0/24, 224.0.0.167/32, 198.51.100.0/24, 239.255.255.250/32, 255.255.255.255/32
+tun-excluded-routes = %INSERT% 224.0.0.167/32
+tun-included-routes = %INSERT% 192.168.1.12/32
+force-http-engine-hosts = %INSERT% -<ip-address>, *
+always-raw-tcp-hosts = %INSERT% 91.108.*, 91.105.1*, 5.28.195.*, 149.154.1*, 185.76.151.*, www.google.com
 
 [MITM]
 hostname-disabled = %INSERT% gateway.icloud.com, gateway.icloud.com.cn, weather-data.apple.com, buy.itunes.apple.com
