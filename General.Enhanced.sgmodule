@@ -4,8 +4,4 @@
 [General]
 tun-excluded-routes = %APPEND% 224.0.0.167/32
 tun-included-routes = %APPEND% 192.168.1.12/32
-always-raw-tcp-hosts = %APPEND% 91.108.*, 91.105.1*, 5.28.195.*, 149.154.1*, 185.76.151.*, www.google.com
 force-http-engine-hosts = %APPEND% -<ip-address>, *
-
-[MITM]
-hostname-disabled = %APPEND% gateway.icloud.com, gateway.icloud.com.cn, weather-data.apple.com, buy.itunes.apple.com
