@@ -1,7 +1,0 @@
-#!name=General.Enhanced
-#!desc=Wubba lubba dub dub
-
-[General]
-tun-included-routes = %APPEND% 192.168.1.12/32
-skip-proxy = *.local, localhost, 10.0.0.0/8, 127.0.0.1, 172.16.0.0/12, 192.168.0.0/24
-tun-excluded-routes = %APPEND% 10.0.0.0/8, 224.0.0.167/32, 172.16.0.0/12, 192.168.0.0/16
